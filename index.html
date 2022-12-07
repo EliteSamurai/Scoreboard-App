@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="scoreboard.css">
+        <link rel="stylesheet" href="CursedTimerUlil-Aznm.ttf">
+    </head>
+    <body>
+        <button class="button-swing" onclick="newGame()">New Game</button>
+        <div class="container">
+            <div>
+                <h3>HOME</h3>
+            </div>
+            <div>
+                <h3>GUEST</h3>
+            </div>
+        </div>
+        <div id="board" class="container">
+            <section id="score">0</section>
+            <section id="score2">0</section>
+        </div>
+
+        <div class="container">
+            <div id="points">
+            <span onclick="increment()">+1</span>
+            <span onclick="add2()">+2</span>
+            <span onclick="add3()">+3</span>
+            </div>
+            <div id="points">
+            <span onclick="increment2()">+1</span>
+            <span onclick="plus2()">+2</span>
+            <span onclick="plus3()">+3</span>
+            </div>
+        </div>
+        
+        <script src="scoreboard.js"></script>
+    </body>
+</html>

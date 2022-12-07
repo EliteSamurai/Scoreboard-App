@@ -1,0 +1,99 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(CursedTimerUlil-Aznm.ttf);
+  }
+
+body {
+    margin: 0;
+    font-family: 'myFirstFont';
+    background-color: #1B244A;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly; 
+    height: 35vh;
+}
+
+button {
+    margin-left: 45%;
+    height: 5vh;
+}
+
+button:hover {
+  color: #001F3F;
+  background-color: #fff;
+}
+
+.container h3 {
+    color: #fff;
+    font-size: 90px;
+    padding-top: 60px;
+    margin-left: 20px;
+}
+
+section {
+    display: flex;
+    justify-content: space-around; 
+    width: 280px;
+    align-items: center;
+    background-color: black;
+    color: #F94F6D;
+    font-size: 150px;
+    height: 30vh;
+    border-radius: 5px;
+}
+
+#points span {
+    display: flex;
+    box-sizing: border-box;
+    font-size: 30px;
+    color: #9aabd8;
+    display: inline-block;
+    border: 1px solid #9aabd8;
+    border-radius: 5px;
+    padding: 8px 5px;
+    margin: 0px 15px;
+}
+
+.button-swing {
+    color: #65b5f6;
+    background-color: transparent;
+    border: 1px solid #65b5f6;
+    border-radius: 4px;
+    padding: 0 16px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .button-swing:focus {
+    animation: swing 1s ease;
+    animation-iteration-count: 1;
+  }
+  
+  @keyframes swing {
+    15% {
+      transform: translateX(5px);
+    }
+    30% {
+      transform: translateX(-5px);
+    }
+    50% {
+      transform: translateX(3px);
+    }
+    65% {
+      transform: translateX(-3px);
+    }
+    80% {
+      transform: translateX(2px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+
+
+
+
+
