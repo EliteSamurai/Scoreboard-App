@@ -5,63 +5,75 @@
 
 body {
     margin: 0;
-    font-family: 'myFirstFont';
     background-color: #1B244A;
 }
 
-.container {
-    display: flex;
-    justify-content: space-evenly; 
-    height: 35vh;
+body, .button-swing{
+  font-family: 'myFIrstFont';
+}
+
+.head, #board, .container2 {
+  display: flex;
+}
+
+.head {
+    justify-content: space-around; 
+    max-height: 35vh;
 }
 
 button {
-    margin-left: 45%;
-    height: 5vh;
+  margin: 0 auto;
+  display: block;
 }
 
-button:hover {
-  color: #001F3F;
-  background-color: #fff;
+span:hover {
+  background-color: black;
+  cursor: pointer;
 }
 
-.container h3 {
+.head h3 {
     color: #fff;
-    font-size: 90px;
-    padding-top: 60px;
-    margin-left: 20px;
+    font-size: 5.625rem;
 }
 
-section {
-    display: flex;
+#board {
     justify-content: space-around; 
-    width: 280px;
-    align-items: center;
-    background-color: black;
     color: #F94F6D;
-    font-size: 150px;
-    height: 30vh;
-    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    font-size: 8rem;
+}
+
+#board section{
+  width: 25%;
+  padding: .2em 30px;
+  background-color: black;
+  border-radius: 5px;
+}
+
+.container2{
+  justify-content: space-around;
+  padding-top: 2em;
 }
 
 #points span {
-    display: flex;
-    box-sizing: border-box;
-    font-size: 30px;
+    font-size: 1.875rem;
     color: #fff;
     display: inline-block;
-    border: 1px solid #9aabd8;
     border-radius: 5px;
-    padding: 8px 5px;
+    padding: .4em .4em;
     margin: 0px 15px;
 }
 
+#points span, .button-swing{
+  border: 1px solid #fff;
+}
+
 .button-swing {
-    color: #65b5f6;
+    color: #fff;
     background-color: transparent;
-    border: 1px solid #65b5f6;
     border-radius: 4px;
-    padding: 0 16px;
+    padding: 1em 26px;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
   }
@@ -89,6 +101,16 @@ section {
     }
     100% {
       transform: translateX(0);
+    }
+  }
+
+  @media (max-width: 599px){
+    #points span {
+      font-size: 1.4rem;
+    }
+
+    .head h3{
+      font-size: 5rem;
     }
   }
 
